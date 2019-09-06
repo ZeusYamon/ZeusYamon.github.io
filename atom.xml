@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ZeusYamon.github.io/"/>
-  <updated>2019-09-05T07:10:04.963Z</updated>
+  <updated>2019-09-06T06:50:06.565Z</updated>
   <id>https://ZeusYamon.github.io/</id>
   
   <author>
@@ -17,20 +17,64 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>初次折腾</title>
-    <link href="https://ZeusYamon.github.io/2019/09/05/%E5%88%9D%E6%AC%A1%E6%8A%98%E8%85%BE/"/>
-    <id>https://ZeusYamon.github.io/2019/09/05/初次折腾/</id>
-    <published>2019-09-05T05:47:22.000Z</published>
-    <updated>2019-09-05T07:10:04.963Z</updated>
+    <title>hexo常用指令</title>
+    <link href="https://ZeusYamon.github.io/2019/09/06/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
+    <id>https://ZeusYamon.github.io/2019/09/06/hexo常用指令/</id>
+    <published>2019-09-06T06:47:00.000Z</published>
+    <updated>2019-09-06T06:50:06.565Z</updated>
     
-    <content type="html"><![CDATA[<p>前几天坐在电脑前挣扎了一下午不知道搞开发的第一步怎么迈出，在朋友的建议下，决定从建一个blog开始，还是蛮简单的，建了两次，原因是工位电脑不适合用来建设本站，干脆直接把个人电脑整出来搞这个了。</p>]]></content>
+    <content type="html"><![CDATA[<p>生成</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure><p>部署</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><p>生成与部署可以连起来用</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure><p>调试模式本地预览</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s --debug</span><br></pre></td></tr></table></figure><p>新建文章(默认post)</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"postname"</span></span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;前几天坐在电脑前挣扎了一下午不知道搞开发的第一步怎么迈出，在朋友的建议下，决定从建一个blog开始，还是蛮简单的，建了两次，原因是工位电脑不适合用来建设本站，干脆直接把个人电脑整出来搞这个了。&lt;/p&gt;
-
+        &lt;p&gt;生成&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>建站小结</title>
+    <link href="https://ZeusYamon.github.io/2019/09/06/%E5%BB%BA%E7%AB%99%E5%B0%8F%E7%BB%93/"/>
+    <id>https://ZeusYamon.github.io/2019/09/06/建站小结/</id>
+    <published>2019-09-06T01:16:04.000Z</published>
+    <updated>2019-09-06T06:42:47.042Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本站是是用hexo+next来搭建的，目前只在github上部署，之后计划部署在coding以及购买独立域名，直接使用hexo免去了大部分的前端搭建工作，但对于我这种新手小白来说，好多配置都看不懂，没有从0写html的自由度和基础度，不过之前我也想过了，从0开始太艰辛，自己只要学会怎么去使用前人开发出的工具就好了，要学的东西太多，这样可以省去我很多很多时间，下面就来整理一下怎么初步使用hexo以及部署在github上。</p><h2 id="第一步-安装node"><a href="#第一步-安装node" class="headerlink" title="第一步 安装node"></a>第一步 安装node</h2><p>进入<a href="https://nodejs.org/en/" target="_blank" rel="noopener">node官网</a> ，下载安装LTS稳定版本。<br>附：<a href="https://baike.baidu.com/item/node.js/7567977?fr=aladdin" target="_blank" rel="noopener">node.js百度百科</a></p><h2 id="第二步-github注册"><a href="#第二步-github注册" class="headerlink" title="第二步 github注册"></a>第二步 github注册</h2><p>进入<a href="https://github.com/" target="_blank" rel="noopener">github</a> ，点击”sign up”注册。<br>注册完成后，左键右上方头像，进入”My Repositories”，建立一个”new project”，”Repository name”为用户名。<br>在仓库中建立一个index.html文件测试一下域名在github是否可用。<br>附：<a href="https://baike.baidu.com/item/GitHub" target="_blank" rel="noopener">github百度百科</a></p><h2 id="第三步-安装git-for-windows"><a href="#第三步-安装git-for-windows" class="headerlink" title="第三步 安装git for windows"></a>第三步 安装git for windows</h2><p>进入<a href="https://gitforwindows.org/" target="_blank" rel="noopener">Git For Windows官网</a> ，下载安装。</p><h2 id="第四步-配置githubSHH"><a href="#第四步-配置githubSHH" class="headerlink" title="第四步 配置githubSHH"></a>第四步 配置githubSHH</h2><p>打开第三步安装的git bash，输入指令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"Github的注册邮箱地址"</span></span><br></pre></td></tr></table></figure><p>回车回车回车就好</p><p>打开github，点击头像打开”setting”，找到”SSH and GPG keys”,创建”new SSH”,Title随意填写<br>在本地C:/用户/Administrator/.ssh下找到id_rsa.pub 复制内容到Key下。</p><h2 id="第五步-本地使用hexo"><a href="#第五步-本地使用hexo" class="headerlink" title="第五步 本地使用hexo"></a>第五步 本地使用hexo</h2><p>进入<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo官网</a> ，开始配置，不懂就进<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo文档</a> ，照着教程一步一步来。<br>在本地建立blog文件夹，呼出cmd，cd进入blog文件夹，输入指令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure><p>等待安装完毕后，输入指令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init <span class="string">"你的blog名"</span></span><br></pre></td></tr></table></figure><p>cmd&gt;cd进入你的blog文件夹，输入指令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure><p>继续输入指令开始调试</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s -p 4000</span><br></pre></td></tr></table></figure><p>完成后就可以在localhost：4000下访问你的blog了</p><h2 id="第六步-安装sublime-text-3"><a href="#第六步-安装sublime-text-3" class="headerlink" title="第六步 安装sublime text 3"></a>第六步 安装sublime text 3</h2><p>进入<a href="http://www.sublimetext.com/" target="_blank" rel="noopener">sublime官网</a> ，下载安装<br>这是一个可视化html代码编辑器，附<a href="https://baike.baidu.com/item/Sublime%20Text/6284835?fromtitle=Sublime&fromid=8130415&fr=aladdin" target="_blank" rel="noopener">Sublime百度百科</a></p><h2 id="第七步-发布hexo至github"><a href="#第七步-发布hexo至github" class="headerlink" title="第七步 发布hexo至github"></a>第七步 发布hexo至github</h2><p>用sub进入blog根目录下_config.yml文件进行配置<br>详情见hexo官网下<a href="https://hexo.io/zh-cn/docs/deployment" target="_blank" rel="noopener">部署</a></p><p>至此就完成blog的创建和部署了，接下来的任务就是完善blog的细节了，我会逐步总结我用到的插件主题或者是有意思的代码。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本站是是用hexo+next来搭建的，目前只在github上部署，之后计划部署在coding以及购买独立域名，直接使用hexo免去了大部分的
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>初次折腾</title>
+    <link href="https://ZeusYamon.github.io/2019/09/05/%E5%88%9D%E6%AC%A1%E6%8A%98%E8%85%BE/"/>
+    <id>https://ZeusYamon.github.io/2019/09/05/初次折腾/</id>
+    <published>2019-09-05T05:47:22.000Z</published>
+    <updated>2019-09-06T06:45:42.378Z</updated>
+    
+    <content type="html"><![CDATA[<p>前几天坐在电脑前挣扎了一下午不知道搞开发的第一步怎么迈出，在朋友的建议下，决定从建一个blog开始，还是蛮简单的，建了两次，原因是工位电脑不适合用来建设本站，干脆直接把个人电脑整出来搞这个了，希望这是我进步的一个开始，这里准备用来记录学习笔记，生活随笔以及各种杂七杂八的东西，毕竟是首次拥有一个属于自己的小世界，蛮开心的。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;前几天坐在电脑前挣扎了一下午不知道搞开发的第一步怎么迈出，在朋友的建议下，决定从建一个blog开始，还是蛮简单的，建了两次，原因是工位电脑不适合用来建设本站，干脆直接把个人电脑整出来搞这个了，希望这是我进步的一个开始，这里准备用来记录学习笔记，生活随笔以及各种杂七杂八的东西
       
     
     </summary>
@@ -38,28 +82,6 @@
     
     
       <category term="随笔" scheme="https://ZeusYamon.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://ZeusYamon.github.io/2019/09/04/hello-world/"/>
-    <id>https://ZeusYamon.github.io/2019/09/04/hello-world/</id>
-    <published>2019-09-04T13:46:18.068Z</published>
-    <updated>2019-09-05T00:55:53.762Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Here’s-ZeusYamon"><a href="#Here’s-ZeusYamon" class="headerlink" title="Here’s ZeusYamon"></a>Here’s ZeusYamon</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
     
   </entry>
   
